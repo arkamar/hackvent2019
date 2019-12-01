@@ -11,3 +11,7 @@
 ![ball](01/f182d5f0-1d10-4f0f-a0c1-7cba0981b6da.jpg)
 
 There is an another image inside from 332th byte. ![thumb](01/thumb.jpg)
+
+## notes
+
+https://ranking.academy.hacking-lab.com/
