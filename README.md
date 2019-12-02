@@ -2,6 +2,7 @@
 
 01. [`HV19{just-4-PREview!}`](#day-1)
 02. [`HV19{Cr4ck_Th3_B411!}`](#day-2)
+03. [`HV19{h01d-th3-d00r-4204-ld4Y}`](#day-3)
 
 ## Day 1
 
@@ -20,6 +21,10 @@ There is an another image inside from 332th byte. ![thumb](01/thumb.jpg)
 The [Triangulation.stl](02/Triangulation.stl) is stereolithography format for 3D model.
 There is a QR code in the middle of the ball.
 ![flag](02/flag.png)
+
+## Day 3
+
+I used https://tio.run/#hodor to interpret the [script](03/script.hd).
 
 ## notes
 
