@@ -3,6 +3,7 @@
 01. [`HV19{just-4-PREview!}`](#day-1)
 02. [`HV19{Cr4ck_Th3_B411!}`](#day-2)
 03. [`HV19{h01d-th3-d00r-4204-ld4Y}`](#day-3)
+04. [`HV19{R3memb3r, rem3mber - the 24th 0f December}`](#day-4)
 
 ## Day 1
 
@@ -25,6 +26,18 @@ There is a QR code in the middle of the ball.
 ## Day 3
 
 I used https://tio.run/#hodor to interpret the [script](03/script.hd).
+
+## Day 4
+
+> Santa released a new password policy (more than 40 characters, upper, lower,
+> digit, special).
+>
+> The elves can't remember such long passwords, so they found a way to continue to
+> use their old (bad) password:
+>
+> merry christmas geeks
+
+Run windows, install [AutoHotKey](https://www.autohotkey.com/), run the script [HV19-PPC.ahk](04/HV19-PPC.ahk), open notepad, write slowly `merry christmas geeks` and it will be replaced with the flag.
 
 ## notes
 
