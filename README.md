@@ -41,4 +41,5 @@ Run windows, install [AutoHotKey](https://www.autohotkey.com/), run the script [
 
 ## notes
 
-https://ranking.academy.hacking-lab.com/
+- https://ranking.academy.hacking-lab.com/
+- https://hv19.idocker.hacking-lab.com/
