@@ -4,6 +4,7 @@
 02. [`HV19{Cr4ck_Th3_B411!}`](#day-2)
 03. [`HV19{h01d-th3-d00r-4204-ld4Y}`](#day-3)
 04. [`HV19{R3memb3r, rem3mber - the 24th 0f December}`](#day-4)
+05. [`HV19{D1fficult_to_g3t_a_SPT_R3ader}`](#day-5)
 
 ## Day 1
 
@@ -38,6 +39,25 @@ I used https://tio.run/#hodor to interpret the [script](03/script.hd).
 > merry christmas geeks
 
 Run windows, install [AutoHotKey](https://www.autohotkey.com/), run the script [HV19-PPC.ahk](04/HV19-PPC.ahk), open notepad, write slowly `merry christmas geeks` and it will be replaced with the flag.
+
+## Day 5
+
+> To handle the huge load of parcels Santa introduced this year a parcel tracking
+> system. He didn't like the black and white barcode, so he invented a more
+> solemn barcode. Unfortunately the common barcode readers can't read it anymore,
+> it only works with the pimped models santa owns. Can you read the barcode
+
+![code](05/157de28f-2190-4c6d-a1dc-02ce9e385b5c.png)
+
+I wrote small [program](05/dump.c) to dump hex colors from the first line of the image and processed it with following pipeline
+```sh
+< 157de28f-2190-4c6d-a1dc-02ce9e385b5c.png png2ff | ./dump | uniq | grep -vF 'ffff ffff' | cut -c11-12 | h2b
+```
+The flag is in the middle of other letters.
+```
+X8YIOF0ZP4S8HV19{D1fficult_to_g3t_a_SPT_R3ader}S1090OMZE0E3NFP6E
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+```
 
 ## notes
 
