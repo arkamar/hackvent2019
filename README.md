@@ -5,6 +5,7 @@
 03. [`HV19{h01d-th3-d00r-4204-ld4Y}`](#day-3)
 04. [`HV19{R3memb3r, rem3mber - the 24th 0f December}`](#day-4)
 05. [`HV19{D1fficult_to_g3t_a_SPT_R3ader}`](#day-5)
+06. [`HV19{BACONCIPHERISSIMPLEBUTCOOL}`](#day-6)
 
 ## Day 1
 
@@ -57,6 +58,22 @@ The flag is in the middle of other letters.
 ```
 X8YIOF0ZP4S8HV19{D1fficult_to_g3t_a_SPT_R3ader}S1090OMZE0E3NFP6E
             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+```
+
+## Day 6
+
+> *F*ra*n*cis Baco*n* *w*a*s* *a*n E*ng*lish ph*i*l*os*o*p*her a*n*d *s*tat*e*sm*a*n w*h*o se*rve*d *a*s At*t*or*n*ey Gen*e*ral and as *L*or*d* *Ch*an*ce*l*l*or of *En*g*l*an*d*. Hi*s* *w*orks ar*e* c*red*it*e*d w*ith* d*e*ve*lo*pi*ng* *t*h*e* sci*e*nt*i*fic me*t*hod and re*m*ai*ned* in*fl*u*en*ti*al* th*rou*gh *t*he s*cien*tific *r*ev*o*l*u*ti*o*n.
+> *B*a*co*n h*as* *b*e*e*n ca*l*led *th*e *f*ath*e*r o*f* emp*iric*i*s*m. *Hi*s *wor*ks ar*g*ued for th*e* po*ssi*bi*li*t*y* of s*c*ie*n*tifi*c* *kno*wl*edg*e b*a*se*d* onl*y* u*p*on i*n*du*c*t*i*ve *r*ea*s*onin*g* *a*nd c*aref*u*l* o*bs*er*v*ation o*f* *e*v*e*nt*s* in *na*tur*e*. Mo*st* *i*mp*ort*an*t*l*y*, *he* a*rgue*d sc*i*en*c*e co*uld* *b*e *a*c*hi*eved by us*e* of a *s*ce*p*t*ical* a*nd* me*t*hod*i*ca*l* *a*pp*roa*ch wh*er*eby *s*cientist*s* ai*m* t*o* avo*i*d m*i*sl*ead*in*g* themsel*ve*s. *A*lth*oug*h *h*is *p*ra*c*tic*a*l i*d*e*a*s ab*out* *s*u*ch* *a* *m*et*h*od, *t*he B*a*con*i*an meth*o*d, d*i*d no*t* have *a* l*o*n*g*-*la*s*t*ing *i*nfluen*c*e, *th*e *g*e*ne*ral *i*dea *of* *t*he imp*o*rta*n*ce and pos*s*i*b*il*it*y o*f* a s*c*ept*i*cal methodology makes Bacon the father of the scientific method. This method was a new rhetorical and theoretical framework for science, the practical details of which are still central in debates about science and methodology.
+
+This is [the Baconian cipher](http://www.wondersandmarvels.com/2012/12/shakespeares-secrets-a-hidden-cipher-in-literatures-greatest-works.html).
+The original cypher text is in file [`text.html`](06/text.html). I wrote a small lex/yacc parser (see [`decode_lex.py`](06/decode_lex.py) and [`decode.py`](06/decode.py)) to transfer it to binary representation and [`solve.py`](06/solve.py) decrypts the cipher.
+
+```
+SANTALIKESHISBACONBUTALSOTHISBACONTHEPASSWORDISHVXBACONCIPHERISSIMPLEBUTCOOLXREPLACEXWITHBRACKETSANDUSEUPPERCASE
+```
+With extra spaces:
+```
+SANTA LIKES HIS BACON BUT ALSO THIS BACON THE PASSWORD IS HV X BACON CIPHER IS SIMPLE BUT COOL X REPLACE X WITH BRACKETS AND USE UPPERCASE
 ```
 
 ## notes
