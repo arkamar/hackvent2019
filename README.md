@@ -8,6 +8,7 @@
 06. [`HV19{BACONCIPHERISSIMPLEBUTCOOL}`](#day-6)
 07. [`HV19{1m_als0_w0rk1ng_0n_a_r3m0t3_c0ntr0l}`](#day-7)
 08. [`HV19{5M113-420H4-KK3A1-19801}`](#day-8)
+09. [`HV19{Cha0tic_yet-0rdered}`](#day-9)
 
 ## Day 1
 
@@ -134,6 +135,28 @@ def decode(s):
     return o
 ```
 Complete script is [here](08/solve.py).
+
+## Day 9
+
+> ### Santas Quick Response 3.0
+>
+> Visiting the following railway station has left lasting memories.
+>
+> ![img](09/railway.jpg)
+>
+> Santas brand new gifts distribution system is heavily inspired by it. Here is
+> your personal gift, can you extract the destination path of it?
+>
+> ![img](09/qr.png)
+>
+> Hints
+> - it starts with a single pixel
+> - centering is hard
+
+I found [this article](https://www.wikiwand.com/en/Rule_30) when searching the railway image which describes [Rule 30](https://en.wikipedia.org/wiki/Rule_30).
+It is necessary to generate mask with Rule 30 (I wrote [this](09/solve.py) python script) and `xor` it with broken QR code.
+
+![img](09/qr.png) `XOR` ![mask](09/mask.png) `=` ![out](09/out.png)
 
 ## notes
 
