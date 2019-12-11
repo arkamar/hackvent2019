@@ -200,6 +200,13 @@ fi
 API encodes information to the `token`.
 This [script](11/solve.sh) access platinum part with the flag.
 
+## Day 12
+
+> ### back to basic
+>
+> Santa used his time machine to get a present from the past. get your rusty
+> tools out of your cellar and solve this one!
+
 ## Day 14
 
 > ### Achtung das Flag
