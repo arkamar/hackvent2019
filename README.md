@@ -10,6 +10,8 @@
 08. [`HV19{5M113-420H4-KK3A1-19801}`](#day-8)
 09. [`HV19{Cha0tic_yet-0rdered}`](#day-9)
 
+h2. [`HV19{Dont_confuse_0_and_O}`](#hidden-2)
+
 ## Day 1
 
 > I got this little image, but it looks like the best part got censored on the
@@ -157,6 +159,10 @@ I found [this article](https://www.wikiwand.com/en/Rule_30) when searching the r
 It is necessary to generate mask with Rule 30 (I wrote [this](09/solve.py) python script) and `xor` it with broken QR code.
 
 ![img](09/qr.png) `XOR` ![mask](09/mask.png) `=` ![out](09/out.png)
+
+## Hidden 2
+
+The video name `3DULK2N7DcpXFg8qGo9Z9qEQqvaEDpUCBB1v.mp4` from [Day 7](#day-7) encodes hidden flag with [Base 58](https://en.wikipedia.org/wiki/Base58).
 
 ## notes
 
