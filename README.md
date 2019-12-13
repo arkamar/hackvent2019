@@ -207,6 +207,20 @@ This [script](11/solve.sh) access platinum part with the flag.
 > Santa used his time machine to get a present from the past. get your rusty
 > tools out of your cellar and solve this one!
 
+## Day 13
+
+> ### TrieMe
+>
+> Switzerland's national security is at risk. As you try to infiltrate a secret
+> spy facility to save the nation you stumble upon an interesting looking login
+> portal.
+>
+> Can you break it and retrieve the critical information?
+>
+> #### Resources
+>
+> - Facility: http://whale.hacking-lab.com:8888/trieme/
+
 ## Day 14
 
 > ### Achtung das Flag
