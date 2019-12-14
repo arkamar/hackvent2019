@@ -268,6 +268,13 @@ This [script](11/solve.sh) access platinum part with the flag.
 The `@fff` variable holds the encrypted flag.
 This [scripts](14/solve.py) decrypts it.
 
+## Day 15
+
+> ### Santa's Workshop
+>
+> The Elves are working very hard.
+> Look at http://whale.hacking-lab.com:2080/ to see how busy they are.
+
 ## Hidden 1
 
 The first hidden flag is hidden in copy to clipboard of the [Day 6](#day-6).
