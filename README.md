@@ -10,6 +10,7 @@
 08. [`HV19{5M113-420H4-KK3A1-19801}`](#day-8)
 09. [`HV19{Cha0tic_yet-0rdered}`](#day-9)
 10. [`HV19{Sh3ll_0bfuscat10n_1s_fut1l3}`](#day-10)
+11. [`HV19{th3_cha1n_1s_0nly_as_str0ng_as_th3_w3ak3st_l1nk}`](#day-11)
 
 - h1. [`HV19{1stHiddenFound}`](#hidden-1)
 - h2. [`HV19{Dont_confuse_0_and_O}`](#hidden-2)
@@ -185,6 +186,17 @@ else
   echo "nooooh. try harder!"
 fi
 ```
+
+## Day 11
+
+> ### Frolicsome Santa Jokes API
+>
+> The elves created an API where you get random jokes about santa.
+>
+> Go and try it here: http://whale.hacking-lab.com:10101
+
+API encodes information to the `token`.
+This [script](11/solve.sh) access platinum part with the flag.
 
 ## Hidden 1
 
