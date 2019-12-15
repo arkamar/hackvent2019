@@ -9,6 +9,7 @@
 07. [`HV19{1m_als0_w0rk1ng_0n_a_r3m0t3_c0ntr0l}`](#day-7)
 08. [`HV19{5M113-420H4-KK3A1-19801}`](#day-8)
 09. [`HV19{Cha0tic_yet-0rdered}`](#day-9)
+10. [`HV19{Sh3ll_0bfuscat10n_1s_fut1l3}`](#day-10)
 
 h2. [`HV19{Dont_confuse_0_and_O}`](#hidden-2)
 
@@ -159,6 +160,30 @@ I found [this article](https://www.wikiwand.com/en/Rule_30) when searching the r
 It is necessary to generate mask with Rule 30 (I wrote [this](09/solve.py) python script) and `xor` it with broken QR code.
 
 ![img](09/qr.png) `XOR` ![mask](09/mask.png) `=` ![out](09/out.png)
+
+## Day 10
+
+> ### Guess what
+>
+> The flag is right, of course
+
+TL;DR: Run the `guess` binary and look to the `/proc/<PID>/cmdline`.
+
+The binary constructs environment variable based on the PID of the process and re-execs itself via bash.
+In the second exec it detects the variable, deciphers the shell scripts and execs it.
+
+```sh
+#!/bin/bash
+
+read -p "Your input: " input
+
+if [ $input = "HV19{Sh3ll_0bfuscat10n_1s_fut1l3}" ]
+then
+  echo "success"
+else
+  echo "nooooh. try harder!"
+fi
+```
 
 ## Hidden 2
 
