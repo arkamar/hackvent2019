@@ -7,8 +7,10 @@ clientid = '0123456789012345'
 
 def on_connect(client, userdata, flags, rc):
     print("[+] Connection success")
-    client.subscribe('#')
-    print("[+] subscribed")
+    client.subscribe('#', qos = 1)
+    print("[+] subscribed #")
+    client.subscribe('$SYS/#')
+    print("[+] subscribed $SYS/#")
 
 def on_message(client, userdata, msg):
     print('[+] Topic: %s - Message: %s' % (msg.topic, msg.payload))
