@@ -14,6 +14,7 @@
 
 - h1. [`HV19{1stHiddenFound}`](#hidden-1)
 - h2. [`HV19{Dont_confuse_0_and_O}`](#hidden-2)
+- h3. [`HV19{an0ther_DAILY_fl4g}`](#hidden-3)
 
 ## Day 1
 
@@ -218,6 +219,16 @@ stegsnow -C msg
 ## Hidden 2
 
 The video name `3DULK2N7DcpXFg8qGo9Z9qEQqvaEDpUCBB1v.mp4` from [Day 7](#day-7) encodes hidden flag with [Base 58](https://en.wikipedia.org/wiki/Base58).
+
+## Hidden 3
+
+Following script dumps the flag
+```sh
+while sleep 3600
+do
+	nc whale.hacking-lab.com 17
+done
+```
 
 ## notes
 
