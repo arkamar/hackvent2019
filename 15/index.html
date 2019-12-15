@@ -1,0 +1,54 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Santa's workshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="cover.css" rel="stylesheet">
+    <script src="countUp.js" type="module"></script>
+    <script src="count.js" type="module"></script>
+    <script src="mqttws31.js" type="text/javascript"></script>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="config.js" type="text/javascript"></script>
+    <script src="mqtt.js" type="text/javascript"></script>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <script type="text/javascript">
+    var countUp
+    $(document).ready(function() {
+        MQTTconnect();
+        $("body").click(function(){  
+            $(".alert").hide();
+        });
+    });
+    </script>
+  </head>
+  <body class="text-center">
+    <div id="alert"></div>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Ho Ho Ho</h1>
+        <p class="lead">The elves in Santa's workshop <br />
+        Are busy as can be<br />
+        They all are working around the clock<br />
+        On toys for you and me</p>
+        <img style="float:left"src="gift.svg" width="200" />
+        <h1 style="margin-top: 2.5em;"id="gifts">0</h1><p class="lead">gifts built by the elves!</p> 
+      </main>
+    </div> 
+  </body>
+</html>
