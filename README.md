@@ -11,6 +11,7 @@
 09. [`HV19{Cha0tic_yet-0rdered}`](#day-9)
 10. [`HV19{Sh3ll_0bfuscat10n_1s_fut1l3}`](#day-10)
 
+h1. [`HV19{1stHiddenFound}`](#hidden-1)
 h2. [`HV19{Dont_confuse_0_and_O}`](#hidden-2)
 
 ## Day 1
@@ -183,6 +184,23 @@ then
 else
   echo "nooooh. try harder!"
 fi
+```
+
+## Hidden 1
+
+The first hidden flag is hidden in copy to clipboard of the [Day 6](#day-6).
+
+```
+Born: January 22	     	 	   	   	 	       	     	  	  
+Died: April 9   	  	 	    	  	      	   		  	  
+Mother: Lady Anne   		 	   	   	      	  	      	  
+Father: Sir Nicholas	 	      		    	    	  	  	      	      
+Secrets: unknown      	 	  	 	    	    	   	       	  
+```
+The spaces behind text are spaces, tabs and newlines hiding the flag in the message vie `stegsnow` command.
+```sh
+python decode.py > msg
+stegsnow -C msg
 ```
 
 ## Hidden 2
