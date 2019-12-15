@@ -1,22 +1,21 @@
 # Hackvent 2019
 
-01. [`HV19{just-4-PREview!}`](#day-1)
-02. [`HV19{Cr4ck_Th3_B411!}`](#day-2)
-03. [`HV19{h01d-th3-d00r-4204-ld4Y}`](#day-3)
-04. [`HV19{R3memb3r, rem3mber - the 24th 0f December}`](#day-4)
-05. [`HV19{D1fficult_to_g3t_a_SPT_R3ader}`](#day-5)
-06. [`HV19{BACONCIPHERISSIMPLEBUTCOOL}`](#day-6)
-07. [`HV19{1m_als0_w0rk1ng_0n_a_r3m0t3_c0ntr0l}`](#day-7)
-08. [`HV19{5M113-420H4-KK3A1-19801}`](#day-8)
-09. [`HV19{Cha0tic_yet-0rdered}`](#day-9)
-10. [`HV19{Sh3ll_0bfuscat10n_1s_fut1l3}`](#day-10)
-11. [`HV19{th3_cha1n_1s_0nly_as_str0ng_as_th3_w3ak3st_l1nk}`](#day-11)
-14. [`HV19{s@@jSfx4gPcvtiwxPCagrtQ@,y^p-za-oPQ^a-z\x20\n^&&s[(.)(..)][\2\1]g;s%4(...)%"p$1t"%ee}`](#day-14)
+- 01 [`HV19{just-4-PREview!}`](#day-1)
+- 02 [`HV19{Cr4ck_Th3_B411!}`](#day-2)
+- 03 [`HV19{h01d-th3-d00r-4204-ld4Y}`](#day-3)
+- 04 [`HV19{R3memb3r, rem3mber - the 24th 0f December}`](#day-4)
+- 05 [`HV19{D1fficult_to_g3t_a_SPT_R3ader}`](#day-5)
+- 06 [`HV19{BACONCIPHERISSIMPLEBUTCOOL}`](#day-6)
+- 07 [`HV19{1m_als0_w0rk1ng_0n_a_r3m0t3_c0ntr0l}`](#day-7)
+- 08 [`HV19{5M113-420H4-KK3A1-19801}`](#day-8)
+- 09 [`HV19{Cha0tic_yet-0rdered}`](#day-9)
+- 10 [`HV19{Sh3ll_0bfuscat10n_1s_fut1l3}`](#day-10)
+- 11 [`HV19{th3_cha1n_1s_0nly_as_str0ng_as_th3_w3ak3st_l1nk}`](#day-11)
+- 14 [`HV19{s@@jSfx4gPcvtiwxPCagrtQ@,y^p-za-oPQ^a-z\x20\n^&&s[(.)(..)][\2\1]g;s%4(...)%"p$1t"%ee}`](#day-14)
 
-
-- h1. [`HV19{1stHiddenFound}`](#hidden-1)
-- h2. [`HV19{Dont_confuse_0_and_O}`](#hidden-2)
-- h3. [`HV19{an0ther_DAILY_fl4g}`](#hidden-3)
+- H1 [`HV19{1stHiddenFound}`](#hidden-1)
+- H2 [`HV19{Dont_confuse_0_and_O}`](#hidden-2)
+- H3 [`HV19{an0ther_DAILY_fl4g}`](#hidden-3)
 
 ## Day 1
 
