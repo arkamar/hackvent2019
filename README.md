@@ -275,6 +275,11 @@ This [scripts](14/solve.py) decrypts it.
 > The Elves are working very hard.
 > Look at http://whale.hacking-lab.com:2080/ to see how busy they are.
 
+```
+[+] subscribed $SYS/#
+[+] Topic: $SYS/broker/version - Message: b'mosquitto version 1.4.11 (We elves are super-smart and know about CVE-2017-7650 and the POC. So we made a genious fix you never will be able to pass. Hohoho)'        
+```
+
 - [CVE-2017-7650](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7650)
 - [PoC](https://bugs.eclipse.org/bugs/show_bug.cgi?id=516765)
 
