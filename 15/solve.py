@@ -5,8 +5,8 @@ import paho.mqtt.client as mqtt
 
 def on_connect(client, userdata, flags, rc):
     print("[+] Connection success")
-    client.subscribe('$SYS/#')
     client.subscribe('#')
+    print("[+] subscribed")
 
 def on_message(client, userdata, msg):
     print('[+] Topic: %s - Message: %s' % (msg.topic, msg.payload))
@@ -14,7 +14,7 @@ def on_message(client, userdata, msg):
 def on_error(client, error):
     print('[-] Error:', error)
 
-client = mqtt.Client(transport = 'websockets')
+client = mqtt.Client(client_id='0123456789012345', clean_session=True, transport = 'websockets')
 client.on_connect = on_connect
 client.on_message = on_message
 client.on_error = on_error
