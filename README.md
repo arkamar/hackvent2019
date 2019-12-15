@@ -11,8 +11,8 @@
 09. [`HV19{Cha0tic_yet-0rdered}`](#day-9)
 10. [`HV19{Sh3ll_0bfuscat10n_1s_fut1l3}`](#day-10)
 
-h1. [`HV19{1stHiddenFound}`](#hidden-1)
-h2. [`HV19{Dont_confuse_0_and_O}`](#hidden-2)
+- h1. [`HV19{1stHiddenFound}`](#hidden-1)
+- h2. [`HV19{Dont_confuse_0_and_O}`](#hidden-2)
 
 ## Day 1
 
