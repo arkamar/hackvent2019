@@ -18,16 +18,8 @@ def on_connect(client, userdata, flags, rc):
     #client.subscribe('$SYS/#')
     #print("[+] subscribed $SYS/#")
 
-m = None
 def on_message(client, userdata, msg):
-    global m
-
-    n = int(msg.payload)
-    d = 0
-    if m != None:
-        d = n - m
-    m = n
-    print('[+] Topic: %s - Message: %s, %d' % (msg.topic, msg.payload, d))
+    print('[+] Topic: %s - Message: %s' % (msg.topic, msg.payload))
 
 def on_error(client, error):
     print('[-] Error:', error)
