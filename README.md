@@ -12,6 +12,7 @@
 - 10 [`HV19{Sh3ll_0bfuscat10n_1s_fut1l3}`](#day-10)
 - 11 [`HV19{th3_cha1n_1s_0nly_as_str0ng_as_th3_w3ak3st_l1nk}`](#day-11)
 - 14 [`HV19{s@@jSfx4gPcvtiwxPCagrtQ@,y^p-za-oPQ^a-z\x20\n^&&s[(.)(..)][\2\1]g;s%4(...)%"p$1t"%ee}`](#day-14)
+- 16 [`HV19{B0rked_Flag_Calculat0r}`](#day-16)
 
 - H1 [`HV19{1stHiddenFound}`](#hidden-1)
 - H2 [`HV19{Dont_confuse_0_and_O}`](#hidden-2)
