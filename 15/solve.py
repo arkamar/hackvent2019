@@ -1,19 +1,33 @@
 #! /bin/env python
 
-import time
+import sys
 import paho.mqtt.client as mqtt
 
-clientid = '0123456789012345'
+clientid = '999999999999999999999999999'
+
+if len(sys.argv) == 2:
+    clientid = sys.argv[1]
 
 def on_connect(client, userdata, flags, rc):
     print("[+] Connection success")
-    client.subscribe('#', qos = 1)
+    client.subscribe('#')
     print("[+] subscribed #")
-    client.subscribe('$SYS/#')
-    print("[+] subscribed $SYS/#")
+    #client.subscribe('HV19/gifts/' + clientid) # + '/flag-tbd')
+    #client.subscribe('/HV19/gifts/flag-tbd')
+    #print("[+] subscribed #flag")
+    #client.subscribe('$SYS/#')
+    #print("[+] subscribed $SYS/#")
 
+m = None
 def on_message(client, userdata, msg):
-    print('[+] Topic: %s - Message: %s' % (msg.topic, msg.payload))
+    global m
+
+    n = int(msg.payload)
+    d = 0
+    if m != None:
+        d = n - m
+    m = n
+    print('[+] Topic: %s - Message: %s, %d' % (msg.topic, msg.payload, d))
 
 def on_error(client, error):
     print('[-] Error:', error)
