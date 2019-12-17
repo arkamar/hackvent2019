@@ -11,6 +11,7 @@
 - 09 [`HV19{Cha0tic_yet-0rdered}`](#day-9)
 - 10 [`HV19{Sh3ll_0bfuscat10n_1s_fut1l3}`](#day-10)
 - 11 [`HV19{th3_cha1n_1s_0nly_as_str0ng_as_th3_w3ak3st_l1nk}`](#day-11)
+- 13 [`HV19{get_th3_chocolateZ}`](#day-13)
 - 14 [`HV19{s@@jSfx4gPcvtiwxPCagrtQ@,y^p-za-oPQ^a-z\x20\n^&&s[(.)(..)][\2\1]g;s%4(...)%"p$1t"%ee}`](#day-14)
 
 - H1 [`HV19{1stHiddenFound}`](#hidden-1)
@@ -220,6 +221,24 @@ This [script](11/solve.sh) access platinum part with the flag.
 > #### Resources
 >
 > - Facility: http://whale.hacking-lab.com:8888/trieme/
+
+This challenge is is about `PatriciaTrie` [bug](https://issues.apache.org/jira/browse/COLLECTIONS-714).
+
+```java
+public void testNullTerminatedKey2() {
+	PatriciaTrie<Integer> trie = new PatriciaTrie<>();
+	trie.put("x", 0);
+	Assert.assertTrue(trie.containsKey("x")); // ok
+	trie.put("x\u0000", 1);
+	Assert.assertTrue(trie.containsKey("x\u0000")); // ok
+	Assert.assertTrue(trie.containsKey("x")); // fail
+}
+```
+
+First call [`./solve.sh`](13/solve.sh) script, coppy the `javax.faces.ViewState` value and past it as a first parameter to the `solve.sh` script again and append it with `auth_token_4835989\u0000`.
+```sh
+./solve.sh '-8502787694603742044:-3890048074146143282' 'auth_token_4835989\u0000'
+```
 
 ## Day 14
 
