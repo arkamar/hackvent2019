@@ -282,6 +282,13 @@ This [scripts](14/solve.py) decrypts it.
 > Santa has coded a simple project for you, but sadly he removed all the operations.
 > But when you restore them it will print the flag!
 
+## Day 17
+
+> ### Unicode Portal
+>
+> Buy your special gifts online, but for the ultimative gift you have to become admin.
+> http://whale.hacking-lab.com:8881/
+
 ## Hidden 1
 
 The first hidden flag is hidden in copy to clipboard of the [Day 6](#day-6).
